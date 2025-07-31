@@ -14,7 +14,7 @@ and want to learn C++.
         - [ ] Sum & subtraction by matrix
         - [ ] Multiplication & division by scalar/matrix
     - [ ] Matrix-associated methods:
-        - [ ] Transposition: `transpose()`
+        - [x] Transposition: `transpose()`
         - [ ] Determinant: `det()`
         - [ ] Inverse matrix: `inverse()`
     - [ ] Pre-determined matrices:
