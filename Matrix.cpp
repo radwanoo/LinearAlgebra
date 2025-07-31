@@ -23,7 +23,12 @@ Matrix Matrix::identity(size_t size) {
 }
 
 Matrix Matrix::diag(std::vector<double>& vec) {
-	TEST_RET;
+	size_t matOrder = vec.size();
+	Matrix result(matOrder, matOrder);
+	for (int a = 0; a < vec.size(); a++) {
+		result.mainVec[a][a] = vec[a];
+	}
+	return result;
 }
 
 bool Matrix::isSquare() const{
@@ -45,7 +50,7 @@ double Matrix::det() const{
 	}
 }
 
-int Matrix::cofactorSign(int i, int j) const {
+double Matrix::cofactorSign(int i, int j) const {
 	return pow(-1, (i + j));
 }
 

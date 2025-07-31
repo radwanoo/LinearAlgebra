@@ -15,11 +15,11 @@ public:
 
 	//"template"? matrices
 	static Matrix identity(size_t size);
-	static Matrix diag(std::vector<double>& vec);
+	static Matrix diag(std::vector<double>& vec);	//replace with vector2 if implemented!
 
 	bool isSquare() const;
 	double det() const;
-	int cofactorSign(int i, int j) const;
+	double cofactorSign(int i, int j) const;
 	Matrix transpose() const;
 	Matrix inverse() const;
 	Matrix minor(int i, int j) const;

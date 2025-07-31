@@ -7,6 +7,7 @@ using namespace std;
 
 int main()
 {
-	Matrix A(2,2);
-
+	vector<double> vec = { 1, 1, 1 };
+	Matrix A = A.diag(vec);
+	cout << A;
 }
