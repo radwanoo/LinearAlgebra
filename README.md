@@ -9,17 +9,17 @@ and want to learn C++.
 
 ## MVP plan
 
-- [ ] `Matrix` class (obviously), with:
-    - [ ] Basic arithmetic operations:
-        - [ ] Sum & subtraction by matrix
-        - [ ] Multiplication & division by scalar/matrix
-    - [ ] Matrix-associated methods:
-        - [ ] Transposition: `transpose()`
-        - [ ] Determinant: `det()`
-        - [ ] Inverse matrix: `inverse()`
-    - [ ] Pre-determined matrices:
-        - [ ] Identity matrix: `identity(int order)`
-        - [ ] Diagonal matrix: `diagonal(vector<double> values)`
+- [x] `Matrix` class (obviously), with:
+    - [x] Basic arithmetic operations:
+        - [x] Sum & subtraction by matrix
+        - [x] Multiplication & division by scalar/matrix
+    - [x] Matrix-associated methods:
+        - [x] Transposition: `transpose()`
+        - [x] Determinant: `det()`
+        - [x] Inverse matrix: `inverse()`
+    - [x] Pre-determined matrices:
+        - [x] Identity matrix: `identity(int order)`
+        - [x] Diagonal matrix: `diagonal(vector<double> values)`
 
 Rather humble, but is a subject to change, I guess.
 
@@ -32,4 +32,5 @@ Rather humble, but is a subject to change, I guess.
         or complex values
     - [ ] Add complex matrices support, perhaps a virtual `Matrix` class with
     derived `RealsMatrix` and `ComplexMatrix`?
+- [ ] `vector2`, `vector3` classes
 - [ ] GUI/CLI?
