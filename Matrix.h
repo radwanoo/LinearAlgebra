@@ -36,6 +36,10 @@ public:
 	Matrix operator/(const double& scalar) const;
 	Matrix operator/(const Matrix& other) const;
 
+			//ELEMENTARY OPPERATIONS
+	void swapRows(int row1, int row2);
+	void swapCols(int col1, int col2);
+
 	//Arithmetic shortened:
 	void operator*=(const double& scalar);
 	void operator*=(const Matrix& other);

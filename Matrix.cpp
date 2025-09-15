@@ -172,6 +172,16 @@ Matrix Matrix::operator/(const Matrix& other) const {
 	return (*this).operator*(other.inverse());
 }
 
+void Matrix::swapRows(int row1, int row2) {
+	std::swap(mainVec[row1 - 1], mainVec[row2 - 1]);
+}
+
+void Matrix::swapCols(int col1, int col2) {
+	for (int i = 0; i < mainVec[0].size(); i++) {
+		std::swap(mainVec[i][col1 - 1], mainVec[i][col2 - 1]);
+	}
+}
+
 void Matrix::operator*=(const double& scalar) {
 	for (std::vector<double>& vec : mainVec) {
 		for (double& a : vec) {

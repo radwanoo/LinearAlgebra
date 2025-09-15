@@ -3,12 +3,23 @@
   <ItemGroup>
     <ClCompile Include="Matrix.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Complex.cpp" />
+    <ClCompile Include="MainWindow.cpp" />
+    <ClCompile Include="GuiMatrix.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Matrix.h" />
-    <ClInclude Include="include\Complex.h" />
+    <ClInclude Include="Complex.h" />
+    <ClInclude Include="Constants.h" />
+    <ClInclude Include="GuiMatrix.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="MainWindow.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="MainWindow.h" />
   </ItemGroup>
 </Project>
