@@ -31,6 +31,20 @@ Matrix Matrix::diag(std::vector<double>& vec) {
 	return result;
 }
 
+Matrix Matrix::augment(const Matrix& mat1, const Matrix& mat2) {
+	if (mat1.rows != mat2.rows) throw std::invalid_argument("Matrix rows don't match!");
+	Matrix result(mat1.rows, mat1.cols + mat2.cols);
+	for (int i = 0; i < result.rows; i++) {
+		for (int j = 0; j < mat1.cols; j++) {
+			result.mainVec[i][j] = mat1.mainVec[i][j];
+		}
+		for (int j = 0; j < mat2.cols; j++) {
+			result.mainVec[i][j + mat1.cols] = mat2.mainVec[i][j];
+		}
+	}
+	return result;
+}
+
 bool Matrix::isSquare() const{
 	return (cols == rows);
 }
@@ -67,9 +81,11 @@ Matrix Matrix::transpose() const {
 Matrix Matrix::inverse() const {
 	//check if inverse is possible
 	if (!isSquare()) throw std::invalid_argument("The matrix must be square!");
-	if (det() == 0) throw std::invalid_argument("The determinant is 0!");
-	Matrix inverse(order(), order());
+
 	double det1 = det();
+	if (!det1) throw std::invalid_argument("The determinant is 0!");
+
+	Matrix inverse(order(), order());
 	if (order() == 2) {			//utilizing the 2x2 inverse matrix formula
 		inverse.mainVec[0][0] = mainVec[1][1];
 		inverse.mainVec[0][1] = -mainVec[0][1];
@@ -78,18 +94,59 @@ Matrix Matrix::inverse() const {
 		return inverse * (1/det1);
 	}
 	else {
-		for (int a = 0; a < order(); a++) {			//adjugate method, highly ineffective, esp for bigger matrices
-			for (int b = 0; b < order(); b++) {
-				inverse.mainVec[a][b] = minor(a + 1, b + 1).det() * cofactorSign(a + 1, b + 1);
+		//for (int a = 0; a < order(); a++) {			//adjugate method, highly ineffective, esp for bigger matrices
+		//	for (int b = 0; b < order(); b++) {
+		//		inverse.mainVec[a][b] = minor(a + 1, b + 1).det() * cofactorSign(a + 1, b + 1);
+		//	}
+		//}
+		//inverse *= (1/det1);
+		//return inverse.transpose();
+
+		//Check if matrix is diagonal
+
+		std::vector<double> vec;
+		for (int i = 0; i < mainVec.size(); i++) {
+			vec.push_back(mainVec[i][i]);
+		}
+		Matrix diag = Matrix::diag(vec);
+		std::cout << diag;
+		//Gaussian elimination method, more efficient for bigger matrices
+		inverse = augment(*this, identity(order()));
+		
+		//Half pivot for numeric stability
+		int rowMin = 0;
+		for (int i = 0; i < inverse.mainVec.size(); i++) {
+			if (std::abs(inverse.mainVec[i][0]) > rowMin) rowMin = i;
+		}
+		if (rowMin) inverse.swapRows(1, rowMin + 1);
+
+		//elimination itself; reduce i-th element to 1, subtract other rows
+
+		for (int i = 0; i < inverse.mainVec.size(); i++) {
+			inverse.rowByScalar(i + 1, 1 / inverse.mainVec[i][i]);
+
+			for (int j = 0; j < inverse.mainVec.size(); j++) {
+				if (i == j) continue; else {
+					inverse.addRows(j + 1, i + 1, -inverse.mainVec[j][i]);
+
+				}
 			}
 		}
-		inverse *= (1/det1);
-		return inverse.transpose();
+
+		//Remove the identity part
+		Matrix result(inverse.rows, inverse.rows);
+		for (int i = 0; i < result.mainVec.size(); i++) {
+			for (int j = 0; j < result.mainVec[0].size(); j++) {
+				result.mainVec[i][j] = inverse.mainVec[i][j + inverse.rows];
+			}
+		}
+
+		return result;
 	}
 }
 
 Matrix Matrix::minor(int i, int j) const {
-	if (i > rows || j > cols || i < 1 || j < 1) throw std::invalid_argument("Invalid col/row index!");
+	if (i > rows || j > cols || i < 1 || j < 1) throw std::invalid_argument("Invalid index!");
 	if (rows == 1 || cols == 1) {
 		Matrix res(1, 1);
 		res(1, 1) = mainVec[0][0];
@@ -172,14 +229,12 @@ Matrix Matrix::operator/(const Matrix& other) const {
 	return (*this).operator*(other.inverse());
 }
 
-void Matrix::swapRows(int row1, int row2) {
-	std::swap(mainVec[row1 - 1], mainVec[row2 - 1]);
-}
-
-void Matrix::swapCols(int col1, int col2) {
-	for (int i = 0; i < mainVec[0].size(); i++) {
-		std::swap(mainVec[i][col1 - 1], mainVec[i][col2 - 1]);
+bool Matrix::operator==(const Matrix& other) const {
+	if (cols != other.cols || rows != other.rows) return false;
+	for (int i = 0; i < rows; i++) {
+		if (mainVec[i] != other.mainVec[i]) return false;
 	}
+	return true;
 }
 
 void Matrix::operator*=(const double& scalar) {
@@ -202,6 +257,40 @@ void Matrix::operator/=(const double& scalar) {
 
 void Matrix::operator/=(const Matrix& other) {
 	*this = (*this).operator/(other);
+}
+
+void Matrix::swapRows(int row1, int row2) {
+	std::swap(mainVec[row1 - 1], mainVec[row2 - 1]);
+}
+
+void Matrix::swapCols(int col1, int col2) {
+	for (int i = 0; i < mainVec[0].size(); i++) {
+		std::swap(mainVec[i][col1 - 1], mainVec[i][col2 - 1]);
+	}
+}
+
+void Matrix::rowByScalar(int row, double scalar) {
+	for (int i = 0; i < mainVec[0].size(); i++) {
+		mainVec[row-1][i] *= scalar;
+	}
+}
+
+void Matrix::colByScalar(int col, double scalar) {
+	for (int i = 0; i < mainVec.size(); i++) {
+		mainVec[i][col - 1] *= scalar;
+	}
+}
+
+void Matrix::addRows(int row1, int row2, double scalar) {
+	for (int i = 0; i < mainVec[0].size(); i++) {
+		mainVec[row1 - 1][i] += mainVec[row2 - 1][i] * scalar;
+	}
+}
+
+void Matrix::addCols(int col1, int col2, double scalar) {
+	for (int i = 0; i < mainVec.size(); i++) {
+		mainVec[i][col1 - 1] += mainVec[i][col2 - 1] * scalar;
+	}
 }
 
 std::ostream& operator<<(std::ostream& os, const Matrix& mat) {
