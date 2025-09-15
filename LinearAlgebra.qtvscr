@@ -1,0 +1,449 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" FontFamily="Segoe UI" FontSize="12">
+  <FlowDocument.Tag><![CDATA[{
+  "timestamp": "2025-08-03 08:43:15",
+  "files": {
+    "C:\\Users\\Mateusz\\source\\repos\\LinearAlgebra\\LinearAlgebra.vcxproj": {
+      "before": "7VndT+NGEL/nSv0L+mJZnAIPxOGj5a44PnFJDkWXACJ8vFQ6bexx4mLvWrtrDtrr/96xvV7HiQNEtHCl8ICU3dnZ2d/O/GZ2/P6nN2/sDzdRaFwDFwGjbXOr2TINoC7zAjppm4n0N9+ZH5wff7BPOPsdXGl0wSdJKM8In4AUbfNjEoSeaaAWir+mUsa/WpZwpxAR0YwClzPBfNl0WWR5cA0hi4FbkRiny6ztVmvHRO2GYfclRIecJbExIGMI26basMOoH0wSTiQaKHJhFK+bNfrUDRMP2mYXxsnk22VAd7aLFbimosrJZGyrOpiakv7ZJyGRPuORkymxLf07l8CBHI+65fcYdwohEAH3mKeknsPAHL2bX3Yfix2q+FeQu8u0B+O2onG2pT00d1h0AHRleVtx2sOQjUlYuulFR/nJRR5hztZes2VbC8PKqz7D7VfGvdzp0pW2VQwpCaXuMAk858/xO/+9N94jmy3f393chdbWJnEJbP7cIt62R2C87e/9pV01W6PUnDImj0gEIiYuOBKE/EzCK9uqjithDAGPfRV5yBeBoA/USg90p0iqJrOixEvFfBQzLg11pra5tn7RUcRyQuR047eh5o9OHDcV9TRjRF6YhlV3DxiPXpBSRdtsrK1XonPj29p6Yf1Go91uzLBEwyxop7KkCIAqdZzdxuAcxHEYuBkrzcVoNq2gOxeQ7TIIxpzwAIQjeQK2tTiuFhQGnjEWCpDO9dbuThlDxagS7kwJJ64EPkLJcxogbaPuyuhS7BH08jqMVWCr8NfTAedjXP1jyF1OWQgIwYST6DiWQRT8kV2lup6l088KvOblpwP95Xgr0v3TwfZSfLW/GkFXiTlfXEmPvRsJNK00kbAkVpgqUWJuzTbKZGdTQ2XxCNkOvJySH7ai4LjRFLBWNVdiuUpyyGzCJLaIBxI5T5NmN+Dz6Wom2zQTFCvy1gzXwk0gpFjHTLWynsaGTlkD5pIQ81GXSFLkD50eHwTtY4CaSwevUOnXypKCI2OiV5iWw1R41MsDqoizCq+loT8k6UNZB2361MBqN6BZKZtLz9DGapVt4WqdsMOiOAhBDSCfXRJOkYYH6cPcyf5jsVkZzAseFB11B50puFeqQtI/tcAJB+R/F4RgvLRdOJf9o53t/S/d3sfzw/0vneOj0fGgt/92fYn8RvpSqNekt0prdHybE+rCEEteZdL8qKrVrPlz24OAXpUYjJLx6FYg4A4qEFgW2lY5pLc8BArYg8ir+X6+ffrMUHsvnS6M0Hvm78gSoNmc98hbL+Ima1k0yrfLo+79U0Ld9KCZd6SnQH9Rh66d0oj1qeQBJnu3ECvePjUTepF2q7zw1D+1wDLfyL3s6D/uZT1KxiF0jofdg7NPLEybcArruhkNinrBwCn4wLF7p5+ZNRN60VKXzaFfOp0rsK2n8OiZF88zs9iz8RdS74DQSUImMJKEegTbQ0J6bhxv7eElzE8Vt/O/I71KsTB/+tVSXUFY3znlvZLd90d2ZTZHl9NeWH6YSCuwEG6aGL5FsVcvOCSYPR8gF5GAzmpbaFNXu9bZZuozyaJV04pNNWJUIAVJ0bxHUBmvpe436ohRKO057R10h71mhN+VVJN3vvm++BC/s3Ms869VWt1Mu6Ho++rWhGpA1/cZdDPd+Rs=",
+      "after": "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"
+    },
+    "C:\\Users\\Mateusz\\source\\repos\\LinearAlgebra\\LinearAlgebra.vcxproj.user": {
+      "before": "zZJPa8MwDMULuw32HYwppD0s7p8xxkjaQwe77NB2ZTsnjpJ4OFaw5dJBP/ycjNx63KBHPYn3fkia34xGyfrUaHYE6xSalM/jGWdgJBbKVCn3VN4/8fXq7jbZWvwCSeyAqN3HML/x1oIhzoKLcSmvidpnIZysoclc3Chp0WFJscRGFHAEjS1Y0bjcK12IxWy25MGdsc4/dOj71aJvmbgkvmU56JTv6B2IAp/jbIOmUNSjR+NJqEpVeZt1yvQ8nmx1RiXaZhqlafQCua/On8osF9FvaIjd0QG9rIf0PjbI4pKeiGGsh/w3xNPjw7UC7kFD5uC6tzhA/uEe+9N3/7/6AQ==",
+      "after": "zZJPS8NAEMUL3gQ/gLdlKaQ9mI2tiEiSHip48dBq0XP+TJKVzU7YnS0V+uHdpOQiHhV6nDfDez9m5vpiMolXh1axPRgrUSf8Now4A11gKXWdcEfVzQNfpVeX8cbgJxTEdojKvo/za2cMaOLMu2ib8IaoexTCFg20mQ1bWRi0WFFYYCtK2IPCDoxobe6kKsUiipbcuzPW+/sOfT0bdB0Tv4kvWQ4q4Vt6AyLPZzlboy4lDejBdOarStbOZL0yP05nG5VRhaadB0kSPEHu6uOH1MtFcAr1sVvaoSuaMT2NxU9loBPjwID3b3CH+7vzQ3sFBZmFc93ciPcnu4v7Q/d/nn4D"
+    }
+  }
+}]]></FlowDocument.Tag>
+  <Section Margin="0,24" TextAlignment="Center">
+    <Paragraph FontSize="24" FontWeight="Bold" Margin="12,0">
+      <LineBreak />
+      <Span Foreground="Gray">Qt Visual Studio Tools</Span>
+    </Paragraph>
+    <Paragraph FontSize="42" Margin="12,0" FontWeight="Bold">
+      <Span TextDecorations="Underline">Project Format Conversion</Span>
+    </Paragraph>
+    <Paragraph Margin="12,8" FontSize="18">
+      <Span>Report generated on 2025-08-03 08:43:15</Span>
+    </Paragraph>
+  </Section>
+  <Section>
+    <Paragraph FontSize="32" FontWeight="Bold" Margin="12,0">
+      <Span>Files</Span>
+    </Paragraph>
+    <Paragraph Margin="24,12,0,0">
+      <Span FontFamily="Consolas" FontSize="14" Background="WhiteSmoke"><![CDATA[C:\Users\Mateusz\source\repos\LinearAlgebra\LinearAlgebra.vcxproj]]></Span>
+      <LineBreak />
+      <Hyperlink NavigateUri="file://C:\Users\Mateusz\source\repos\LinearAlgebra\LinearAlgebra.vcxproj?before">[Before]</Hyperlink>
+      <Hyperlink NavigateUri="file://C:\Users\Mateusz\source\repos\LinearAlgebra\LinearAlgebra.vcxproj?after">[After]</Hyperlink>
+      <Hyperlink NavigateUri="file://C:\Users\Mateusz\source\repos\LinearAlgebra\LinearAlgebra.vcxproj?diff&amp;before&amp;after">
+                        [Diff before/after]
+                    </Hyperlink>
+      <Hyperlink NavigateUri="file://C:\Users\Mateusz\source\repos\LinearAlgebra\LinearAlgebra.vcxproj?diff&amp;before&amp;current">
+                        [Diff before/current]
+                    </Hyperlink>
+      <Hyperlink NavigateUri="file://C:\Users\Mateusz\source\repos\LinearAlgebra\LinearAlgebra.vcxproj?diff&amp;after&amp;current">
+                        [Diff after/current]
+                    </Hyperlink>
+      <LineBreak />
+    </Paragraph>
+    <Paragraph Margin="24,12,0,0">
+      <Span FontFamily="Consolas" FontSize="14" Background="WhiteSmoke"><![CDATA[C:\Users\Mateusz\source\repos\LinearAlgebra\LinearAlgebra.vcxproj.user]]></Span>
+      <LineBreak />
+      <Hyperlink NavigateUri="file://C:\Users\Mateusz\source\repos\LinearAlgebra\LinearAlgebra.vcxproj.user?before">[Before]</Hyperlink>
+      <Hyperlink NavigateUri="file://C:\Users\Mateusz\source\repos\LinearAlgebra\LinearAlgebra.vcxproj.user?after">[After]</Hyperlink>
+      <Hyperlink NavigateUri="file://C:\Users\Mateusz\source\repos\LinearAlgebra\LinearAlgebra.vcxproj.user?diff&amp;before&amp;after">
+                        [Diff before/after]
+                    </Hyperlink>
+      <Hyperlink NavigateUri="file://C:\Users\Mateusz\source\repos\LinearAlgebra\LinearAlgebra.vcxproj.user?diff&amp;before&amp;current">
+                        [Diff before/current]
+                    </Hyperlink>
+      <Hyperlink NavigateUri="file://C:\Users\Mateusz\source\repos\LinearAlgebra\LinearAlgebra.vcxproj.user?diff&amp;after&amp;current">
+                        [Diff after/current]
+                    </Hyperlink>
+      <LineBreak />
+    </Paragraph>
+  </Section>
+  <Section>
+    <Paragraph FontSize="32" FontWeight="Bold" Margin="12,0">
+      <Span>Changes</Span>
+    </Paragraph>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Enabling multi-processor compilation]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Users\Mateusz\source\repos\LinearAlgebra\LinearAlgebra.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[      <MultiProcessorCompilation>true</MultiProcessorCompilation>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Project format version]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Users\Mateusz\source\repos\LinearAlgebra\LinearAlgebra.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Keyword>QtVS_v304</Keyword>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Fallback for QTMSBUILD environment variable]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Users\Mateusz\source\repos\LinearAlgebra\LinearAlgebra.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Default Qt properties]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Users\Mateusz\source\repos\LinearAlgebra\LinearAlgebra.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <Import Project="$(QtMsBuild)\qt_defaults.props" Condition="Exists('$(QtMsBuild)\qt_defaults.props')" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Qt build settings]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Users\Mateusz\source\repos\LinearAlgebra\LinearAlgebra.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Warn if Qt/MSBuild is not found]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Users\Mateusz\source\repos\LinearAlgebra\LinearAlgebra.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') OR !Exists('$(QtMsBuild)\Qt.props')">]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  </Target>]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Qt property sheet]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Users\Mateusz\source\repos\LinearAlgebra\LinearAlgebra.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[    <Import Project="$(QtMsBuild)\Qt.props" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+    <Paragraph FontSize="20" FontWeight="Bold" Margin="12">
+      <Span><![CDATA[🡺 Qt targets]]></Span>
+    </Paragraph>
+    <Table CellSpacing="0" BorderBrush="Gray" BorderThickness="0.5">
+      <Table.Columns>
+        <TableColumn />
+        <TableColumn />
+      </Table.Columns>
+      <TableRowGroup>
+        <TableRow Background="Orange">
+          <TableCell ColumnSpan="2" BorderThickness="0.5" BorderBrush="Gray">
+            <Paragraph Margin="10,5" FontWeight="Bold">
+              <Span><![CDATA[C:\Users\Mateusz\source\repos\LinearAlgebra\LinearAlgebra.vcxproj]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+        <TableRow>
+          <TableCell ColumnSpan="2" Background="WhiteSmoke" BorderBrush="Gray" BorderThickness="0.5" />
+        </TableRow>
+        <TableRow>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0" />
+          </TableCell>
+          <TableCell BorderThickness="0, 0, 0.5, 0" BorderBrush="Gray">
+            <Paragraph FontFamily="Consolas" Margin="4, 0">
+              <Span Background="LightGreen"><![CDATA[  <Import Project="$(QtMsBuild)\qt.targets" Condition="Exists('$(QtMsBuild)\qt.targets')" />]]></Span>
+            </Paragraph>
+          </TableCell>
+        </TableRow>
+      </TableRowGroup>
+    </Table>
+  </Section>
+  <Section>
+    <Paragraph />
+  </Section>
+</FlowDocument>
+<!--QX9PAgZTZqmXlvoHDFvX7LZQsJCibla/zxcEhiyTqoA=-->
