@@ -14,10 +14,10 @@ GuiMatrix::GuiMatrix(int rows, int cols, QWidget* parent)
 		for (int j = 0; j < cols; j++) {
 			edit[i][j] = new QLineEdit(this);
 			edit[i][j]->setValidator(validator);
-			edit[i][j]->setText("0");
 			layout->addWidget(edit[i][j], i, j);
 		}
 	}
+	setMatrix(Matrix(3, 3));
 }
 
 Matrix GuiMatrix::getMatrix() const {
@@ -32,7 +32,7 @@ Matrix GuiMatrix::getMatrix() const {
 }
 
 void GuiMatrix::setMatrix(const Matrix& mat) {
-
+	
 	//TEST_RET;
 }
 
