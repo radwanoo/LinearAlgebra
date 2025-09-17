@@ -1,28 +1,27 @@
-#include "Matrix.h"
-#include <iostream>
-#include <stdexcept>
-#include <cmath>
-
 #define TEST_RET return 0	//For compiling with unfinished methods.
 
-Matrix::Matrix(size_t i, size_t j) : rows(i), cols(j) {
+
+template<typename T>
+Matrix<T>::Matrix(size_t i, size_t j) : rows(i), cols(j) {
 	mainVec.resize(rows);
 	for (int a = 0; a < rows; a++) {
 		for(int b = 0; b < cols; b++) {
-			mainVec[a].push_back(0);
+			mainVec[a].push_back(T(0));
 		}
 	}
 }
 
-Matrix Matrix::identity(size_t size) {
-	Matrix result(size, size);
+template <typename T>
+ Matrix<T> Matrix<T>::identity(size_t size) {
+	Matrix<T> result(size, size);
 	for (int a = 0; a < size; a++) {
 		result.mainVec[a][a] = 1;
 	}
 	return result;
 }
 
-Matrix Matrix::diag(std::vector<double>& vec) {
+template <typename T>
+Matrix<T> Matrix<T>::diag(std::vector<T>& vec) {
 	size_t matOrder = vec.size();
 	Matrix result(matOrder, matOrder);
 	for (int a = 0; a < vec.size(); a++) {
@@ -31,9 +30,10 @@ Matrix Matrix::diag(std::vector<double>& vec) {
 	return result;
 }
 
-Matrix Matrix::augment(const Matrix& mat1, const Matrix& mat2) {
+template <typename T>
+Matrix<T> Matrix<T>::augment(const Matrix<T>& mat1, const Matrix<T>& mat2) {
 	if (mat1.rows != mat2.rows) throw std::invalid_argument("Matrix rows don't match!");
-	Matrix result(mat1.rows, mat1.cols + mat2.cols);
+	Matrix<T> result(mat1.rows, mat1.cols + mat2.cols);
 	for (int i = 0; i < result.rows; i++) {
 		for (int j = 0; j < mat1.cols; j++) {
 			result.mainVec[i][j] = mat1.mainVec[i][j];
@@ -45,11 +45,13 @@ Matrix Matrix::augment(const Matrix& mat1, const Matrix& mat2) {
 	return result;
 }
 
-bool Matrix::isSquare() const{
+template <typename T>
+bool Matrix<T>::isSquare() const{
 	return (cols == rows);
 }
 
-double Matrix::det() const{
+template <typename T>
+double Matrix<T>::det() const{
 	if (!isSquare()) throw std::invalid_argument("The matrix must be square!");
 	if (rows == 1) return mainVec[0][0];
 	else if (rows == 2) return (mainVec[0][0] * mainVec[1][1]) - (mainVec[1][0] * mainVec[0][1]);
@@ -166,35 +168,6 @@ Matrix Matrix::minor(int i, int j) const {
 size_t Matrix::order() const {
 	if (cols != rows) throw std::invalid_argument("The matrix must be square!");
 	return rows;
-}
-
-std::vector<double> Matrix::eigenvalues() const {
-	std::vector<double> result(order());
-	double a, b, c, d, delta;
-	switch (order()) {
-	case 1:			//1x1 matrices, just to be safe
-		result.at(0) = mainVec[0][0];
-		return result;
-	case 2:
-		a = mainVec[0][0];
-		b = mainVec[0][1];
-		c = mainVec[1][0];
-		d = mainVec[1][1];
-		delta = (a + d) * (a + d) - 4 * det();
-		if (delta < 0) {
-			std::cout << "WARNING: Complex eigenvalues not implemented; returning placeholder NaNs \n";
-			return std::vector<double>(2, NAN);
-		}
-		result.at(0) = (a + d - sqrt(delta)) / 2;
-		result.at(1) = (a + d + sqrt(delta)) / 2;
-		return result;
-
-	case 3:
-
-	default:
-		throw std::invalid_argument("Matrix not supported; returning placehoder NaN\n");
-		return std::vector<double>(1, NAN);
-	}
 }
 
 double& Matrix::operator()(const size_t row, const size_t col) {

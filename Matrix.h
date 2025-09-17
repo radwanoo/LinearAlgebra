@@ -25,6 +25,7 @@ public:
 	Matrix inverse() const;
 	Matrix minor(int i, int j) const;
 	size_t order() const;
+	std::vector<double> eigenvalues() const;
 
 			//OPERATORS
 	double& operator()(const size_t row, const size_t col);
