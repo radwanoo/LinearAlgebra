@@ -4,11 +4,19 @@
 
 int main(int argc, char *argv[]) {
 
-	QApplication a(argc, argv);
-	MainWindow w;
-	w.show();
 
-	return a.exec();
+	Matrix a(2,2);
+	a(1, 1) = 0; a(1, 2) = -1;
+	a(2, 1) = 1; a(2, 2) = 0;
+	std::vector<double> eigen = a.eigenvalues();
+	for (double d : eigen) {
+		std::cout << d << "\n";
+	}
+	//QApplication a(argc, argv);
+	//MainWindow w;
+	//w.show();
+
+	//return a.exec();
 }
 
 
